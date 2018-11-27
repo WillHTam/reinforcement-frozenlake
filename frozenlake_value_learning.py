@@ -51,7 +51,7 @@ class Agent:
         """
         Calculates value of the action from the state using transition , reward and values tables.
         This value is used to select the best action in the current state, and to calculate the new value of the state
-        on value iteration.
+        on value iteration. Bellman equation.
 
         1. Extract transition counters from given state and action from transition table.  
         Sum all counters to obtain the total count of times we've executed the action from the state
