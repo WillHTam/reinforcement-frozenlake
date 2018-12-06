@@ -89,9 +89,9 @@ class Agent:
     def play_episode(self, env):
         """
         Uses select_action function to find best action to take and plays one full episode.
-        This function is used to pay test eipsodes, during which we dont want to mess upthe 
-        current state of the main environment used to gather random data.   
-        Loops over states accumulating reward for one episode. 
+        This function is used to pay test eipsodes, during which we dont want to mess up the
+        current state of the main environment used to gather random data.
+        Loops over states accumulating reward for one episode.
         """
         total_reward = 0.0
         state = env.reset()

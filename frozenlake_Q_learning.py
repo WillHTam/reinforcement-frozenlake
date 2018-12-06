@@ -40,9 +40,9 @@ class Agent:
             self.state = self.env.reset() if is_done else new_state
 
     def select_action(self, state):
-    """
-    Iterate over actions and look up their values 
-    """
+        """
+        Iterate over actions and look up their values 
+        """
         best_action, best_value = None, None
         for action in range(self.env.action_space.n):
             action_value = self.values[(state, action)]
